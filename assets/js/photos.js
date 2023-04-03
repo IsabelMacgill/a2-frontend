@@ -2,11 +2,11 @@ function callPhotosUpload(photo, key, labels) {
   // params, body, additionalParams
   response = sdk.uploadPut(
     {
-      Accept: "*/*",
+      "Accept": "*/*",
       "image-key": key,
       "Content-Type": "application/jpeg",
       "x-amz-meta-customLabels": labels,
-      "x-api-key": '4bxhpgAnrR9GPmvr1KVgM3u3CekpTp4X1n46SXGm',
+      "x-api-key": "4bxhpgAnrR9GPmvr1KVgM3u3CekpTp4X1n46SXGm",
     },
     photo,
     {}
